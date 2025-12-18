@@ -1,36 +1,155 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Sisques Labs Landing Page
 
-## Getting Started
+Modern, high-performance landing page for Sisques Labs, built with Next.js 16 and TypeScript. Features internationalization, dark mode, smooth animations, and a responsive design.
 
-First, run the development server:
+## ✨ Features
+
+- 🌐 **Internationalization** - Multi-language support (English & Spanish) using `next-intl`
+- 🎨 **Dark Mode** - Theme switching with `next-themes`
+- ✨ **Smooth Animations** - Powered by Motion (Framer Motion)
+- 📱 **Responsive Design** - Mobile-first approach with Tailwind CSS
+- ⚡ **Performance Optimized** - Built with Next.js 16 App Router
+- 🎯 **SEO Ready** - Optimized for search engines
+- 🧩 **Component Architecture** - Organized by feature with reusable components
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16.0.3](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/)
+- **Animations**: [Motion](https://motion.dev/) (Framer Motion)
+- **Internationalization**: [next-intl](https://next-intl-docs.vercel.app/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **3D Globe**: [Cobe](https://github.com/shuding/cobe)
+
+## 📋 Prerequisites
+
+- Node.js 20.x or higher
+- pnpm (recommended), npm, yarn, or bun
+
+## 🚀 Getting Started
+
+### Installation
 
 ```bash
+# Install dependencies
+pnpm install
+```
+
+### Development
+
+```bash
+# Run the development server
+pnpm dev
+
+# or
 npm run dev
 # or
 yarn dev
 # or
-pnpm dev
-# or
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Build for production
+pnpm build
 
-## Learn More
+# Start production server
+pnpm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Linting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Run ESLint
+pnpm lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+.
+├── app/                    # Next.js App Router
+│   ├── [locale]/          # Internationalized routes
+│   └── layout.tsx         # Root layout
+├── components/            # Shared UI components
+│   ├── ui/               # Reusable UI primitives
+│   └── providers/        # Context providers
+├── src/                  # Feature-based modules
+│   ├── contact/         # Contact section
+│   ├── hero/           # Hero section
+│   ├── portfolio/      # Portfolio section
+│   ├── services/       # Services section
+│   ├── shared/         # Shared utilities & components
+│   ├── technologies/   # Technologies section
+│   ├── testimonials/   # Testimonials section
+│   └── work-process/   # Work process section
+├── public/             # Static assets
+└── profile/           # Organization profile README
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌍 Internationalization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project supports multiple languages through `next-intl`. Currently available languages:
+
+- English (`en`)
+- Spanish (`es`)
+
+Language files are located in `src/shared/locales/`.
+
+## 🎨 Theming
+
+Dark mode is supported and can be toggled via the theme toggle component. The theme preference is persisted in localStorage.
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory if needed:
+
+```env
+# Add your environment variables here
+```
+
+### Tailwind CSS
+
+The project uses Tailwind CSS 4 with custom configuration. Theme colors and styles can be customized in `tailwind.config.ts`.
+
+## 🚢 Deployment
+
+The project is configured with GitHub Actions for CI/CD. Builds are automatically triggered on pushes to `main` and `dev` branches.
+
+### Deploy on Vercel
+
+The easiest way to deploy is using [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/sisques-labs/landing)
+
+## 📝 Available Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+
+## 🤝 Contributing
+
+This is a private repository for Sisques Labs. For questions or issues, please contact the development team.
+
+## 📄 License
+
+Private - All rights reserved © 2024 Sisques Labs
+
+## 📬 Contact
+
+- **Email**: contact@sisqueslabs.com
+- **Website**: [Sisques Labs](https://sisqueslabs.com)
+
+---
+
+Built with ❤️ by [Sisques Labs](https://github.com/sisques-labs)
