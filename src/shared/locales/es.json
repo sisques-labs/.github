@@ -1,0 +1,172 @@
+{
+  "LandingPage": {
+    "Navbar": {
+      "items": {
+        "services": "Servicios",
+        "portfolio": "Portafolio",
+        "work-process": "Proceso de Trabajo",
+        "technologies": "Tecnologías",
+        "testimonials": "Testimonios",
+        "contact": "Contacto"
+      }
+    },
+    "HeroSection": {
+      "title": "Sisques Labs",
+      "badge": "Agencia de Desarrollo",
+      "description1": "Desarrollamos software que impulsa tu negocio",
+      "description2": "Soluciones tecnológicas escalables y de alto rendimiento",
+      "description3": "Transformamos ideas en productos digitales exitosos",
+      "cta": {
+        "primary": "Ver Proyectos",
+        "secondary": "Contactar"
+      }
+    },
+    "ServicesSection": {
+      "title": "Nuestros Servicios",
+      "description": "Ofrecemos soluciones tecnológicas completas para transformar tu negocio digital",
+      "services": {
+        "web-development": {
+          "title": "Desarrollo Web",
+          "description": "Creamos aplicaciones web modernas, escalables y de alto rendimiento utilizando las últimas tecnologías del mercado.",
+          "features": {
+            "0": "Aplicaciones React/Next.js",
+            "1": "APIs RESTful y GraphQL",
+            "2": "Arquitectura escalable",
+            "3": "Optimización SEO"
+          }
+        },
+        "mobile-development": {
+          "title": "Desarrollo Móvil",
+          "description": "Desarrollamos aplicaciones móviles nativas e híbridas para iOS y Android con excelente experiencia de usuario.",
+          "features": {
+            "0": "Apps nativas iOS/Android",
+            "1": "React Native",
+            "2": "UI/UX optimizado",
+            "3": "Publicación en stores"
+          }
+        },
+        "integrations": {
+          "title": "Integraciones",
+          "description": "Conectamos tus sistemas con APIs, servicios de terceros y plataformas existentes para optimizar tus procesos.",
+          "features": {
+            "0": "APIs de terceros",
+            "1": "Webhooks y automatizaciones",
+            "2": "Sincronización de datos",
+            "3": "Migración de sistemas"
+          }
+        },
+        "r-d-i": {
+          "title": "I+D+I",
+          "description": "Investigamos y desarrollamos soluciones innovadoras utilizando tecnologías emergentes como IA, blockchain y más.",
+          "features": {
+            "0": "Prototipado rápido",
+            "1": "Tecnologías emergentes",
+            "2": "Análisis de viabilidad",
+            "3": "Innovación continua"
+          }
+        },
+        "consulting": {
+          "title": "Consultoría Técnica",
+          "description": "Te ayudamos a tomar decisiones tecnológicas estratégicas y optimizar tu arquitectura de software.",
+          "features": {
+            "0": "Arquitectura de software",
+            "1": "Auditorías técnicas",
+            "2": "Mejores prácticas",
+            "3": "Roadmap tecnológico"
+          }
+        },
+        "maintenance": {
+          "title": "Mantenimiento y Soporte",
+          "description": "Ofrecemos soporte continuo, actualizaciones de seguridad y mejoras para mantener tus aplicaciones al día.",
+          "features": {
+            "0": "Soporte 24/7",
+            "1": "Actualizaciones de seguridad",
+            "2": "Monitoreo y alertas",
+            "3": "Optimización continua"
+          }
+        }
+      }
+    },
+    "PortfolioSection": {
+      "title": "Portafolio",
+      "description": "Explora algunos de nuestros proyectos más destacados y descubre cómo transformamos ideas en soluciones digitales innovadoras.",
+      "viewProject": "Ver Proyecto",
+      "projects": {
+        "apex-engineer": {
+          "description": "Ingeniero virtual de carreras impulsado por IA, diseñado para entusiastas del sim racing. Ofrece recomendaciones estratégicas en tiempo real y analiza la telemetría y el rendimiento del coche para optimizar tus decisiones durante cada carrera."
+        },
+        "pest-patrol": {
+          "description": "Detección de plagas y enfermedades en plantas mediante inteligencia artificial usando visión por computador. Analiza imágenes de cultivos para identificar problemas de forma automática y rápida, ayudando a los agricultores a tomar decisiones tempranas y proteger sus cosechas con mayor precisión."
+        }
+      }
+    },
+    "WorkProcessSection": {
+      "title": "¿Cómo trabajamos?",
+      "description": "Nuestro proceso estructurado garantiza resultados excepcionales en cada proyecto, desde la concepción hasta el lanzamiento.",
+      "learnMore": "Saber más",
+      "steps": {
+        "discovery": {
+          "name": "Descubrimiento",
+          "description": "Comenzamos comprendiendo tus objetivos de negocio, audiencia objetivo y requisitos del proyecto a través de una investigación y análisis exhaustivos."
+        },
+        "design": {
+          "name": "Diseño",
+          "description": "Nuestro equipo de diseño crea interfaces hermosas y fáciles de usar que se alinean con tu marca y brindan experiencias de usuario excepcionales."
+        },
+        "development": {
+          "name": "Desarrollo",
+          "description": "Construimos aplicaciones robustas y escalables utilizando las últimas tecnologías y mejores prácticas para garantizar alto rendimiento y mantenibilidad."
+        },
+        "launch": {
+          "name": "Lanzamiento",
+          "description": "Aseguramos un proceso de despliegue fluido y brindamos soporte continuo para ayudar a que tu producto tenga éxito en el mercado."
+        }
+      }
+    },
+    "TechnologiesSection": {
+      "title": "Tecnologías",
+      "description": "Utilizamos las tecnologías más modernas y confiables para construir aplicaciones escalables y de alto rendimiento."
+    },
+    "TestimonialSection": {
+      "title": "Lo que dicen nuestros clientes",
+      "description": "Descubre cómo hemos ayudado a empresas a alcanzar sus objetivos digitales con soluciones innovadoras y de alta calidad."
+    },
+    "ContactSection": {
+      "title": "Contacto",
+      "description": "¿Tienes un proyecto en mente? Estamos aquí para ayudarte. Contáctanos y hablemos sobre cómo podemos hacer realidad tus ideas.",
+      "form": {
+        "name": "Nombre",
+        "namePlaceholder": "Tu nombre",
+        "email": "Email",
+        "emailPlaceholder": "tu@email.com",
+        "message": "Mensaje",
+        "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+        "submit": "Enviar Mensaje"
+      }
+    },
+    "Footer": {
+      "description": "Transformamos ideas en soluciones digitales innovadoras. Especialistas en desarrollo web, móvil e integraciones.",
+      "quickLinks": "Enlaces Rápidos",
+      "moreLinks": "Más Información",
+      "contact": "Contacto",
+      "email": "contact@sisqueslabs.com",
+      "location": "España",
+      "copyright": "© {year} Sisques Labs. Todos los derechos reservados.",
+      "scrollToTop": "Volver arriba",
+      "links": {
+        "services": "Servicios",
+        "portfolio": "Portafolio",
+        "work-process": "Proceso de Trabajo",
+        "technologies": "Tecnologías",
+        "testimonials": "Testimonios",
+        "contact": "Contacto"
+      },
+      "social": {
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "twitter": "Twitter",
+        "email": "Email"
+      }
+    }
+  }
+}
