@@ -1,0 +1,13 @@
+name: Landing Page Build
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+jobs:
+  build:
+    uses: sisques-labs/workflows/.github/workflows/web-build.yml@main
+    with:
+      app_path: "."
+      app_name: "Landing Page"
