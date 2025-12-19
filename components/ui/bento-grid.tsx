@@ -1,23 +1,22 @@
-import { ComponentPropsWithoutRef, ReactNode } from "react"
-import { ArrowRightIcon } from "@radix-ui/react-icons"
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { ComponentPropsWithoutRef, ReactNode } from "react";
 
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils";
 
 interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
-  children: ReactNode
-  className?: string
+  children: ReactNode;
+  className?: string;
 }
 
-interface BentoCardProps extends ComponentPropsWithoutRef<"div"> {
-  name: string
-  className: string
-  background: ReactNode
-  Icon?: React.ElementType
-  emoji?: string
-  description: string
-  href: string
-  cta: string
+interface BentoCardProps extends ComponentPropsWithoutRef<"a"> {
+  name: string;
+  className: string;
+  background: ReactNode;
+  Icon?: React.ElementType;
+  emoji?: string;
+  description: string;
+  href: string;
+  cta: string;
 }
 
 const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
@@ -31,8 +30,8 @@ const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
 const BentoCard = ({
   name,
@@ -63,20 +62,22 @@ const BentoCard = ({
     {...props}
   >
     <div>{background}</div>
-      <div className="p-4">
-        <div className="z-10 flex transform-gpu flex-col gap-1 transition-all duration-300 lg:group-hover:-translate-y-10">
-          {emoji ? (
-            <span className="text-5xl origin-left transform-gpu transition-all duration-300 ease-in-out group-hover:scale-75">
-              {emoji}
-            </span>
-          ) : Icon ? (
-            <Icon className="h-12 w-12 origin-left transform-gpu text-neutral-900 dark:text-neutral-300 transition-all duration-300 ease-in-out group-hover:scale-75" />
-          ) : null}
-          <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-300">
-            {name}
-          </h3>
-          <p className="max-w-lg text-neutral-700 dark:text-neutral-400">{description}</p>
-        </div>
+    <div className="p-4">
+      <div className="z-10 flex transform-gpu flex-col gap-1 transition-all duration-300 lg:group-hover:-translate-y-10">
+        {emoji ? (
+          <span className="text-5xl origin-left transform-gpu transition-all duration-300 ease-in-out group-hover:scale-75">
+            {emoji}
+          </span>
+        ) : Icon ? (
+          <Icon className="h-12 w-12 origin-left transform-gpu text-neutral-900 dark:text-neutral-300 transition-all duration-300 ease-in-out group-hover:scale-75" />
+        ) : null}
+        <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-300">
+          {name}
+        </h3>
+        <p className="max-w-lg text-neutral-700 dark:text-neutral-400">
+          {description}
+        </p>
+      </div>
 
       <div
         className={cn(
@@ -103,6 +104,6 @@ const BentoCard = ({
 
     <div className="absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
   </a>
-)
+);
 
-export { BentoCard, BentoGrid }
+export { BentoCard, BentoGrid };
